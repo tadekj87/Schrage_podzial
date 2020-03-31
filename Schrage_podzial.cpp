@@ -20,14 +20,15 @@ struct strukturaZadania
 
 struct kolejnoscR
 {
-	bool operator ()( const strukturaZadania& a, const strukturaZadania& b )
+	bool operator ()( const strukturaZadania& a, const strukturaZadania& b ) const
 	{
 		return a.r > b.r;
 	}
 };
+
 struct kolejnoscQ
 {
-	bool operator ()( const strukturaZadania& a, const strukturaZadania& b )
+	bool operator ()( const strukturaZadania& a, const strukturaZadania& b ) const
 	{
 		return a.q < b.q;
 	}
